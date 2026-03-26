@@ -1,0 +1,414 @@
+<!-- HEADER & NAVIGATION -->
+<header>
+    <nav>
+        <h1>IMP</h1>
+        <div class="nav-right">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJNrm370YHNCDI2J3Kw6hbKGJFknZsG3tibVYEYIP3fVXiYU2o=s360-c-no" alt="IMP">
+            <ul>
+                <li><a onclick="showPage('home')">Home</a></li>
+                <li><a onclick="showPage('about')">About</a></li>
+                <li><a onclick="showPage('projects')">Projects</a></li>
+                <li><a onclick="showPage('games')">Games</a></li>
+                <li><a onclick="showPage('hobbies')">Hobbies</a></li>
+                <li><a onclick="showPage('passion')">Passion</a></li>
+                <li><a onclick="showPage('contact')">Contact</a></li>
+                <li><button id="darkModeToggle">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+   <link rel="stylesheet" href="css/style.css">
+</header>
+
+<!-- HOME SECTION -->
+<section id="home" class="active">
+    <div class="home-container">
+        <div class="hero-content">
+            <h2 class="hero-title">ISHIMWE MANENE Paulson</h2>
+            <p class="hero-subtitle">Passionate Developer & Creative Thinker</p>
+            <p class="hero-quote">"Code with purpose. Build with passion. Learn forever."</p>
+            <button class="cta-button" onclick="showPage('about')">Explore My Work</button>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Web Development">
+                    <div class="slide-overlay">Web Development</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Design">
+                    <div class="slide-overlay">UI/UX Design</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=600&h=400&fit=crop" alt="JavaScript">
+                    <div class="slide-overlay">JavaScript Magic</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Problem Solving">
+                    <div class="slide-overlay">Problem Solving</div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(0)"></span>
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT ME SECTION -->
+<section id="about">
+    <div class="section-header">
+        <h2>About Me</h2>
+        <div class="header-line"></div>
+    </div>
+
+    <div class="about-content">
+        <div class="about-text">
+            <h3>Who I Am</h3>
+            <p>
+                I'm <strong>Ishimwe Manene Paulson</strong>, a passionate student at <strong>Ntare Louisenlund International School</strong>. From my first encounter with coding, I was captivated by the power of technology to create solutions and inspire change.
+            </p>
+            <p>
+                My journey is driven by curiosity, creativity, and determination. I believe in learning by doing—experimenting with projects, building prototypes, and testing ideas hands-on. Every challenge is an opportunity to grow.
+            </p>
+        </div>
+
+        <div class="about-stats">
+            <div class="stat-card">
+                <h4>🎯</h4>
+                <p><strong>Goal</strong><br>Become a Professional Web Developer</p>
+            </div>
+            <div class="stat-card">
+                <h4>💡</h4>
+                <p><strong>Passion</strong><br>Creating Meaningful Solutions</p>
+            </div>
+            <div class="stat-card">
+                <h4>🚀</h4>
+                <p><strong>Approach</strong><br>Learn, Build, Iterate</p>
+            </div>
+        </div>
+
+        <div class="about-text">
+            <h3>My Philosophy</h3>
+            <p>
+                Coding expresses my love for always trying, never giving up, and striving to understand better. I combine technical skills with creative thinking to build solutions that are both functional and engaging.
+            </p>
+            <p>
+                Whether designing interactive simulations, programming responsive web pages, or exploring real-world problems with technology, I merge creativity, logic, and problem-solving into every project.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+    <div class="section-header">
+        <h2>Projects</h2>
+        <div class="header-line"></div>
+    </div>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-icon">🛡️</div>
+            <h3>Jackal Scare System</h3>
+            <p class="project-status">Completed</p>
+            <p>
+                An intelligent system that detects approaching jackals and safely deters them using real-time sensor analysis and automated responses. Combines coding logic with real-world problem-solving.
+            </p>
+            <div class="project-tags">
+                <span>Logic Design</span>
+                <span>Event Handling</span>
+                <span>Simulation</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">⚡</div>
+            <h3>Solara Cell Experiment</h3>
+            <p class="project-status">Completed</p>
+            <p>
+                An interactive experiment exploring solar cell efficiency under different environmental conditions. Models energy output based on light intensity, angle, and temperature variables.
+            </p>
+            <div class="project-tags">
+                <span>Data Modeling</span>
+                <span>Science</span>
+                <span>Visualization</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">📊</div>
+            <h3>Student Progress Tracker</h3>
+            <p class="project-status">Coming Soon</p>
+            <p>
+                A comprehensive platform that tracks student progress alongside their mentors. Enables real-time collaboration, feedback, and growth monitoring for educational excellence.
+            </p>
+            <div class="project-tags">
+                <span>Web App</span>
+                <span>Collaboration</span>
+                <span>Analytics</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GAMES SECTION -->
+<section id="games">
+    <div class="section-header">
+        <h2>Games</h2>
+        <div class="header-line"></div>
+    </div>
+
+    <div class="game-section">
+        <h3>🎮 Memory Card Game</h3>
+        <p>Test your memory! Memorize card positions and match all pairs before time runs out.</p>
+
+        <!-- Game Controls -->
+        <div class="game-controls">
+            <div class="level-buttons">
+                <button class="level-btn" data-level="easy">Easy (7 pairs)</button>
+                <button class="level-btn" data-level="medium">Medium (15 pairs)</button>
+                <button class="level-btn" data-level="hard">Hard (25 pairs)</button>
+            </div>
+            <div class="game-action-buttons">
+                <button id="startGame" class="action-btn start-btn">▶ Start Game</button>
+                <button id="endGame" class="action-btn end-btn" disabled>⏹ End Game</button>
+                <button id="restartGame" class="action-btn restart-btn">🔄 Restart</button>
+            </div>
+        </div>
+
+        <p id="scoreDisplay">Score: 0 | Accuracy: 0% | Time: 0s</p>
+        <div id="memory-game" class="memory-game"></div>
+    </div>
+</section>
+
+<!-- HOBBIES SECTION -->
+<section id="hobbies">
+    <div class="section-header">
+        <h2>Hobbies</h2>
+        <div class="header-line"></div>
+    </div>
+
+    <div class="hobbies-grid">
+        <div class="hobby-card">
+            <div class="hobby-icon">♟️</div>
+            <h4>Playing Chess</h4>
+            <p>Strategic thinking and intellectual challenges through the game of kings.</p>
+        </div>
+        <div class="hobby-card">
+            <div class="hobby-icon">⚽</div>
+            <h4>Football</h4>
+            <p>Teamwork, strategy, and discipline on the field.</p>
+        </div>
+        <div class="hobby-card">
+            <div class="hobby-icon">🎬</div>
+            <h4>Watching Movies</h4>
+            <p>Inspiration for creativity, storytelling, and problem-solving.</p>
+        </div>
+        <div class="hobby-card">
+            <div class="hobby-icon">🎵</div>
+            <h4>Music</h4>
+            <p>Focus, creativity, and a different way of thinking.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PASSION SECTION -->
+<section id="passion">
+    <div class="section-header">
+        <h2>My Passion for Coding</h2>
+        <div class="header-line"></div>
+    </div>
+
+    <div class="passion-content">
+        <div class="passion-intro">
+            <h3>Why I Code</h3>
+            <p class="passion-statement">
+                Coding is more than a skill—it's my passion. I love it because it expresses my commitment to always trying, never giving up, and constantly striving to understand and improve what I do best: <strong>learning</strong>.
+            </p>
+            <p>
+                Every line of code is an opportunity to solve problems, create solutions, and inspire others through technology. My ultimate goal is to become a professional web developer who builds meaningful applications.
+            </p>
+        </div>
+
+        <div class="skills-section">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Concepts</h4>
+                    <div class="skill-tags">
+                        <span>DOM Manipulation</span>
+                        <span>Event Handling</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Tools</h4>
+                    <div class="skill-tags">
+                        <span>CodePen</span>
+                        <span>Git</span>
+                        <span>Browser DevTools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="passion-projects">
+            <h3>Coding Projects Showcase</h3>
+            <div class="passion-project-list">
+                <div class="passion-project">
+                    <h4>🛡️ Jackal Scare System</h4>
+                    <p>Real-world problem solving through intelligent algorithms and sensor logic.</p>
+                </div>
+                <div class="passion-project">
+                    <h4>⚡ Solara Cell Experiment</h4>
+                    <p>Scientific modeling and interactive visualization of renewable energy.</p>
+                </div>
+                <div class="passion-project">
+                    <h4>📊 Student Progress Tracker</h4>
+                    <p>Web application for educational collaboration and growth tracking.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="passion-cta">
+            <h3>Let's Build Something Amazing</h3>
+            <p>I'm always excited to collaborate, learn, and create solutions that matter.</p>
+            <button class="cta-button" onclick="showPage('contact')">Get In Touch</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <div class="section-header">
+        <h2>Contact Me</h2>
+        <div class="header-line"></div>
+    </div>
+
+    <div class="contact-content">
+        <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>If you'd like to collaborate, ask questions, or just say hello, I'd love to hear from you!</p>
+            
+            <div class="contact-details">
+                <div class="detail-item">
+                    <h4>📧 Email</h4>
+                    <p>ishimwe.paulson31@ntare-louisenlund.org</p>
+                </div>
+                <div class="detail-item">
+                    <h4>👤 Name</h4>
+                    <p>Ishimwe Manene Paulson</p>
+                </div>
+                <div class="detail-item">
+                    <h4>🎓 School</h4>
+                    <p>Ntare Louisenlund International School</p>
+                </div>
+            </div>
+
+            <a href="mailto:ishimwe.paulson31@ntare-louisenlund.org" class="email-button">
+                ✉️ Send Email
+            </a>
+        </div>
+
+        <!-- FEEDBACK FORM -->
+        <div class="feedback-section">
+            <h3>📝 Leave Me Feedback</h3>
+            <form id="feedbackForm" class="feedback-form">
+
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="feedbackName">Your Name *</label>
+                    <input 
+                        type="text" 
+                        id="feedbackName" 
+                        name="name" 
+                        placeholder="Enter your full name"
+                        required
+                    >
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="feedbackEmail">Your Email *</label>
+                    <input 
+                        type="email" 
+                        id="feedbackEmail" 
+                        name="email" 
+                        placeholder="Enter your email address"
+                        required
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <!-- Feedback Field -->
+                <div class="form-group">
+                    <label for="feedbackText">Your Feedback *</label>
+                    <textarea 
+                        id="feedbackText" 
+                        name="feedback" 
+                        placeholder="Share your thoughts about my portfolio..."
+                        rows="5"
+                        required
+                    ></textarea>
+                    <span class="error-message" id="feedbackError"></span>
+                </div>
+
+                <!-- Star Rating -->
+                <div class="form-group">
+                    <label>Rate My Portfolio *</label>
+                    <div class="star-rating" id="starRating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                        <span class="star" data-value="6">★</span>
+                        <span class="star" data-value="7">★</span>
+                        <span class="star" data-value="8">★</span>
+                        <span class="star" data-value="9">★</span>
+                        <span class="star" data-value="10">★</span>
+                    </div>
+                    <p id="ratingDisplay">No rating selected</p>
+                    <span class="error-message" id="ratingError"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">✉️ Submit Feedback</button>
+            </form>
+
+            <!-- Thank You Message -->
+            <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+                <h3>🎉 Thank You!</h3>
+                <p>Thank you for your valuable feedback! I really appreciate you taking the time to share your thoughts.</p>
+                <button onclick="resetFeedbackForm()">Send Another Feedback</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Ishimwe Manene Paulson. All rights reserved.</p>
+    <p>Built with passion and code 💻</p>
+  <script src="js/script.js"></script>
+</footer>
